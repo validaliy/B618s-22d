@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Belirtilen IP adresi yani vpsnin ip adresi
 SPECIFIC_IP="213.238.181.147"
