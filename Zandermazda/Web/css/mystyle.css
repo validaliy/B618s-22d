@@ -1,0 +1,27 @@
+.baslik {
+    background-color: brown;
+    color: white;
+    display: inline-block;
+    border: 2px solid brown;
+    border-radius: 15px;
+    padding:5px;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: red;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 15px solid brown;
+    border-radius: 50px;
+    color: white;
+}
+
+.code {
+    overflow: auto;
+    height: 40%;
+    width: 100%;
+    background-color: #f2f2f2;
+}

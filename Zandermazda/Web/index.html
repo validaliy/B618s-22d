@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/mystyle.css">
+
+  <title>B618s-22d</title>
+</head>
+
+<body>
+
+  <section>
+
+    <div class="container">
+      <h3 class="baslik">Modem Ayarlar v1</h3>
+      <a href="cgi-bin/ayarlar.cgi" class="btn btn-warning">info</a>
+      <div class="row">
+
+        <form class="w-100" action="http://192.168.8.1:81/cgi-bin/celllock.cgi" method="post">
+
+          <div class="mx-2">
+            <div class="form-group row">
+              <label class="col-3 col-form-label" for="bands">Bands: </label>
+              <input type="text" class="form-control col-8" id="bands" name="bands" placeholder="00" size="2">
+            </div>
+            <div class="form-group row">
+              <label class="col-3 col-form-label" for="pci">PCI: </label>
+              <input type="text" class="form-control col-8" id="pci" name="pci" placeholder="000" size="3">
+            </div>
+            <div class="form-group row">
+              <label class="col-3 col-form-label" for="dlfreq">DL Frequency: </label>
+              <input type="text" class="form-control col-8" id="dlfreq" name="dlfreq" placeholder="00000" size="5">
+            </div>
+          </div>
+
+
+          <hr>
+          <div class="ml-3">
+            <span id="span_new_profile">
+              <input class="btn btn-success" type="submit" name="submit" value="Sabitle"
+                onclick="return confirm('Şebekeyi kilitlemek istiyor musunuz? Modem yeniden Başlatılacak!')"/>
+            </span>
+            <span id="span_delete_profile">
+              <button class="btn btn-danger" type="submit" formaction="http://192.168.8.1:81/cgi-bin/cellunlock.cgi"
+                formmethod="post"
+                onclick="return confirm('Şebeke Sabitlemeyi devre dışı bırakmak istiyor musun? Modem yeniden Başlatılacak!')">Sabitlemeyi
+                kaldır</button>
+              <input class="btn btn-primary" type="submit" name="reboot" value="reboot" formaction="http://192.168.8.1:81/cgi-bin/ayarlar.cgi"
+                formmethod="post"
+                onclick="return confirm('Modem yeniden başlatılacak!')"/>
+            </span>
+          </div>
+
+
+        </form>
+
+        <div class="row m-3 w-100">
+          <button onclick="hucreSabitle('doram')" class="col-5 col-md-2 btn btn-info m-1">Dorumali</button>
+          <button onclick="hucreSabitle('kardesler')" class="col-5 col-md-2 btn btn-info m-1">Kardeşler</button>
+          <button onclick="hucreSabitle('261')" class="col-5 col-md-2 btn btn-info m-1">261</button>
+          <button onclick="hucreSabitle('399')" class="col-5 col-md-2 btn btn-info m-1">399</button>
+          <button onclick="hucreSabitle('219')" class="col-5 col-md-2 btn btn-info m-1">219</button>
+          <button onclick="hucreSabitle('55')" class="col-5 col-md-2 btn btn-info m-1">55</button>
+        </div>
+
+      </div> <!-- row -->
+      <!-- <hr> -->
+
+    </div> <!-- Container -->
+
+
+    <footer>
+      <h1 class="d-block d-sm-none">xs</h1>
+      <h1 class="d-none d-sm-block d-md-none">sm</h1>
+      <h1 class="d-none d-md-block d-lg-none">md</h1>
+      <h1 class="d-none d-lg-block d-xl-none">lg</h1>
+      <h1 class="d-none d-xl-block">xl</h1>
+
+    </footer>
+  </section>
+
+
+
+  <script src="js/myscript.js"></script>
+  <script src="js/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
