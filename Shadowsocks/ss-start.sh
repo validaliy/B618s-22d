@@ -1,5 +1,5 @@
 export SSIP=127.0.0.1
-export SSRP=2080
+export SSRP=8388
 SSPASS="asdasd"
 SSMETHOD="chacha20"
 

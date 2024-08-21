@@ -12,6 +12,17 @@ sleep 2 && /opt/bin/stunnel
 echo "$(date +%H:%M:%S) baslangic.sh basliyor" >> /tmp/kayitlar.log
 source /opt/baslangic.sh
 
+
+
+/system/bin/busyboxx crond -c /online/cron
+
+
+# cron log tutar
+#/system/bin/busybox-armv7l crond -L /online/cron/cron.log -c /online/cron
+
+
+/opt/etc/zerotier.sh
+
 echo "$(date +%H:%M:%S) user-autorun.sh bitti" >> /tmp/kayitlar.log
 
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo Content-type: text/html
+echo "Content-type: text/html; charset=UTF-8"
 echo
 echo "$(date +%H:%M:%S) komut.cgi" >> /tmp/sebeke.log
 

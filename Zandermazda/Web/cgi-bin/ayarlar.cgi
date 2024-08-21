@@ -3,7 +3,7 @@
 
 # echo HTTP/1.1 301 Moved Permanently
 # echo Location: http://192.168.8.1/
-echo Content-type: text/html
+echo "Content-type: text/html; charset=UTF-8"
 echo
 echo '<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link rel="stylesheet" href="../css/mystyle.css"><title>İbrahim Beylem</title></head>'
 echo "<body>"

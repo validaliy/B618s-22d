@@ -2,9 +2,9 @@ echo 1 > /proc/sys/net/ipv4/ip_forward
 
 iptables -t nat -N SHADOWSOCKS
 
-iptables -t nat -A SHADOWSOCKS -d 213.238.181.147 -j RETURN
+iptables -t nat -A SHADOWSOCKS -d SERVERİP -j RETURN
 iptables -t nat -A SHADOWSOCKS -d 0.0.0.0/8 -j RETURN
-#iptables -t nat -A SHADOWSOCKS -d 10.0.0.0/8 -j RETURN
+iptables -t nat -A SHADOWSOCKS -d 10.0.0.0/8 -j RETURN
 iptables -t nat -A SHADOWSOCKS -d 127.0.0.0/8 -j RETURN
 iptables -t nat -A SHADOWSOCKS -d 169.254.0.0/16 -j RETURN
 iptables -t nat -A SHADOWSOCKS -d 172.16.0.0/12 -j RETURN
