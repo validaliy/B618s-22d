@@ -1,0 +1,6 @@
+# Genel kural: Git'in metin dosyalarını otomatik algılamasına izin ver
+* text=auto
+
+# .sh uzantılı dosyalar için her zaman LF (Unix) satır sonu kullan
+*.sh eol=lf
+*.cgi eol=lf
