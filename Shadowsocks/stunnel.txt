@@ -1,5 +1,0 @@
-[ss-redir]
-client = yes
-sni = whatsapp.net
-accept = 8388
-connect = b618.ibrahimbeylem.me:8443

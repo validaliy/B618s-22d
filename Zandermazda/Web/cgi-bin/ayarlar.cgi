@@ -1,5 +1,5 @@
 #!/bin/sh
-
+LOGFILE="/tmp/kayitlar.log"
 
 # echo HTTP/1.1 301 Moved Permanently
 # echo Location: http://192.168.8.1/
@@ -19,7 +19,7 @@ else
   echo "Dns Yok ???"
 fi
 
-echo "<br> Kayıtlar.log: <br> $(cat /tmp/kayitlar.log)"
+echo "<br> Kayıtlar.log: <br> $(cat $LOGFILE)"
 echo "</pre>"
 
 echo "<table><tr><th>baslik</th><th>Cevap</th> </tr>"
